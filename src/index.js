@@ -1,13 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import './index.css';
 import App from './App';
+import Game from './Game';
 import reportWebVitals from './reportWebVitals';
 
+export default function Main() {
+  return (
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/game" element={<Game />} />
+      </Routes>
+    </HashRouter>
+  );
+}
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <HashRouter>
+      <App />
+    </HashRouter>
   </React.StrictMode>
 );
 

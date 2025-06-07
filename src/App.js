@@ -1,24 +1,37 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
+import React, { useState } from "react";
+import Game from './Game';
 import './App.css';
 
-function App() {
+function Home() {
+  const navigate = useNavigate();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <body class="family-feud">
+    <div class="logo-container">
+      UNWIND FAMILY <span>FEUD</span>
     </div>
+    <div class="start-button">
+      <button class="start-button" onClick={() => navigate('/game')}>START</button>
+    </div>
+  </body>
+  );
+}
+
+function App() {
+  const navigate = useNavigate();
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/game" element={<Game />} />
+    </Routes>
+      // <body class="family-feud">
+      //   <div class="logo-container">
+      //     UNWIND FAMILY <span>FEUD</span>
+      //   </div>
+      //   <div class="start-button">
+      //     <button class="start-button" onClick={() => navigate('/game')}>START</button>
+      //   </div>
+      // </body>
   );
 }
 
