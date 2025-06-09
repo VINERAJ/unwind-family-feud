@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/unwind-family-feud/static/css/main.8961b600.css",
-    "main.js": "/unwind-family-feud/static/js/main.b2aa9110.js",
+    "main.css": "/unwind-family-feud/static/css/main.406870a1.css",
+    "main.js": "/unwind-family-feud/static/js/main.ad25f84b.js",
     "static/js/453.2cd2ef0b.chunk.js": "/unwind-family-feud/static/js/453.2cd2ef0b.chunk.js",
     "index.html": "/unwind-family-feud/index.html",
-    "main.8961b600.css.map": "/unwind-family-feud/static/css/main.8961b600.css.map",
-    "main.b2aa9110.js.map": "/unwind-family-feud/static/js/main.b2aa9110.js.map",
+    "main.406870a1.css.map": "/unwind-family-feud/static/css/main.406870a1.css.map",
+    "main.ad25f84b.js.map": "/unwind-family-feud/static/js/main.ad25f84b.js.map",
     "453.2cd2ef0b.chunk.js.map": "/unwind-family-feud/static/js/453.2cd2ef0b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8961b600.css",
-    "static/js/main.b2aa9110.js"
+    "static/css/main.406870a1.css",
+    "static/js/main.ad25f84b.js"
   ]
 }
